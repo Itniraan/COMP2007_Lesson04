@@ -27,6 +27,8 @@ namespace COMP2007_Lesson4_Validation
 
             // Display Total
             lblTotal.Text = total.ToString("c");
+
+            pnlResults.Visible = true;
         }
     }
 }
