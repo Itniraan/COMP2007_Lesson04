@@ -13,5 +13,14 @@ namespace COMP2007_Lesson4_Validation
         {
 
         }
+
+        protected void btnCalculate_Click(object sender, EventArgs e)
+        {
+            // Calculate the tip
+            Decimal tip = Convert.ToDecimal(txtAmount.Text) * Convert.ToDecimal(ddlPercent.SelectedValue);
+
+            //Display Tip
+            lblTip.Text = tip.ToString("c");
+        }
     }
 }
