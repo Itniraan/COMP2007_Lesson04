@@ -5,6 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Tip Calculator</title>
+    <!-- Latest compiled and minified JavaScript -->
+    <!--script src="//code.jquery.com/jquery-1.11.3.min.js"></script> -->
 </head>
 <body>
     <form id="form1" runat="server">
@@ -13,6 +15,7 @@
         <div>
             <label for="txtAmount">Amount:</label>
             <asp:TextBox ID="txtAmount" runat="server" />
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Required!" ControlToValidate="txtAmount"></asp:RequiredFieldValidator>
         </div>
         <div>
             <label for="ddlPercent">Tip %:</label>

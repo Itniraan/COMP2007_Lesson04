@@ -19,8 +19,14 @@ namespace COMP2007_Lesson4_Validation
             // Calculate the tip
             Decimal tip = Convert.ToDecimal(txtAmount.Text) * Convert.ToDecimal(ddlPercent.SelectedValue);
 
-            //Display Tip
+            // Display Tip
             lblTip.Text = tip.ToString("c");
+
+            // Calculate Total
+            Decimal total = Convert.ToDecimal(txtAmount.Text) + tip;
+
+            // Display Total
+            lblTotal.Text = total.ToString("c");
         }
     }
 }
